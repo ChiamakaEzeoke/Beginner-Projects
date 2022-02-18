@@ -1,15 +1,23 @@
 body{
     text-align: center;
+    color: white;
+    font-size: 18px;
 }
 p{
     margin-bottom: 2rem;
 
 }
 h1{
+    color: black;
     margin-bottom: 8rem;
 }
 div{
     background-color: #2a9df4;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+input{
+    width: 5rem;
 }
