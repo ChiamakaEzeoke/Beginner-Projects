@@ -1,0 +1,15 @@
+body{
+    text-align: center;
+}
+p{
+    margin-bottom: 2rem;
+
+}
+h1{
+    margin-bottom: 8rem;
+}
+div{
+    background-color: #2a9df4;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
