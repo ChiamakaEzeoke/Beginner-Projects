@@ -1,0 +1,34 @@
+table{
+    width: 100%;
+    border: 1px solid;
+    border-collapse: collapse;
+    
+}
+tr{
+    border-bottom: 0.5px solid  rgba(61,102,143,0.9);
+    border-left-style: hidden;
+    border-right: hidden;
+}
+tr:first-child{
+    border-bottom: none;
+}
+
+td{
+    padding: 20px 20px;
+}
+td:first-child{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.clubs{
+    cursor: pointer;
+}
+.clubs:hover{
+    text-decoration: underline;
+
+}
+.next{
+    cursor: pointer;
+    
+}
+
