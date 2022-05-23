@@ -1,23 +1,23 @@
-body{
-    font-family: Helvetica;
-  }
-  #ss2 {
-    text-align: center;
-  }
-  table {
-    width: 100%;
-  }
-  th {
-    background-color: #000080;
-    color: white;
-  }
-  td {
-    text-align: center;
-  }
-  .students {
-    background-color: #e2e5de;
-  }
-  .total{
-    font-weight: bold;
-  }
-  
+body {
+  font-family: Helvetica;
+}
+#ss2 {
+  text-align: center;
+}
+table {
+  width: 100%;
+}
+th {
+  background-color: #000080;
+  color: white;
+}
+td {
+  text-align: center;
+}
+.students {
+  background-color: #e2e5de;
+}
+.total {
+  font-weight: bold;
+}
+
