@@ -20,4 +20,6 @@ td {
 .total {
   font-weight: bold;
 }
-
+tr:nth-child(even) {
+  background-color: whitesmoke;
+}
