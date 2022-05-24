@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville&display=swap');
+:root {
+    --main-blue: #175cff;
+    --medium-blue: #4d86ff;
+    --light-blue: #ceddff;
+  
+    --main-red: #ff0642;
+    --light-red: #fcdde1;
+  
+    --main-green: #03ac13;
+    --light-green: #def4ed;
+  }
+body{
+    font-family: 'Baskervville', serif;
+}
+header{
+    text-align: center;
+}
+.notes{
+    text-align: center;
+}
+.note-item{
+    margin-right: 20px;
+}
+
+
+.plans-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 100px 0 100px 0;
+}
+@media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+}
+.plans{
+    border: none;
+    width:250px;
+    padding: 50px 50px 50px 50px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 10px -7px #175CFF;
+
+}
+.plans:nth-child(2){
+    background-color: #def4ed;
+}
+.plan-name{
+    color: var(--main-green);
+    font-weight: bolder;
+}
+.button{
+    margin-left: 30%;
+    width: 100px;
+    height: 30px;
+    margin-top: 20px;
+    background-color: var(--medium-blue);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: var(--main-green);
+    color: var(--light-green);
+    transition: 0.7s;
+}
+footer{
+    text-align: center;
+}
+
+.dollar{
+    font-size: 2rem;
+}
+
