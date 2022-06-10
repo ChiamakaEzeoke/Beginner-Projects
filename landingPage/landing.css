@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --dark-blue: #1F2937;
+    --bold-white: #F9FAF8;
+    --regular-white: #E5E7EB;
+    --light-blue: #3882F6;
+}
+
+body {
+    background-color: var(--dark-blue);
+    font-family: 'Roboto', sans-serif;
+}
+
+span {
+    color: var(--bold-white);
+    font-weight: bolder;
+}
+
+#register-info {
+    color: var(--regular-white);
+}
+
+.signup {
+    background-color: var(--light-blue);
+    color: var(--bold-white);
+    padding: 16px;
+    border: none;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-around;
+    height: 400px;
+    align-items: center;
+}
+
+.room {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.gallery {
+    background-color: white;
+    width: 100%;
+    padding: 30px 0;
+}
+
+.action {
+    background-color: var(--bold-white);
+    color: var(--dark-blue);
+    display: flex;
+    height: 320px;
+    justify-content: center;
+    align-items: center;
+}
+
+.info {
+    background-color: var(--light-blue);
+    width: 70%;
+    height: 160px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#action-btn {
+    background-color: var(--light-blue);
+    color: var(--bold-white);
+    padding: 16px;
+    border: none;
+    outline: 1px solid var(--bold-white);
+}
+
+figcaption {
+    text-align: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav .logo {
+    color: var(--bold-white);
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.nav ul {
+    float: right;
+    font-weight: bold;
+
+}
+
+.nav a {
+    color: var(--regular-white);
+    text-decoration: none;
+}
+
+.nav ul li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.testimonial {
+    background-color: var(--regular-white);
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.article {
+    width: 60%;
+    line-height: 2rem;
+}
+
+cite {
+    float: right;
+    font-weight: bolder;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 25px;
+}
