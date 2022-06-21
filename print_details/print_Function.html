@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print Details</title>
+    <style>
+        table {
+            border: 1px solid black;
+            border-spacing: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>Name</td>
+            <td id="name"></td>
+        </tr>
+        <tr>
+            <td>Height</td>
+            <td id="height"></td>
+        </tr>
+        <tr>
+            <td>Height</td>
+            <td id="country"></td>
+        </tr>
+    </table>
+    <!-- JAVASCRIPT CODE -->
+    <script>
+        let name = "Amaka"
+        let height = 160 + "cm"
+        let country = "Nigeria"
+
+        document.getElementById("name").innerHTML = name;
+        document.getElementById("height").innerHTML = height;
+        document.getElementById("country").innerHTML = country;
+    </script>
+</body>
+
+</html>
