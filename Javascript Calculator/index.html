@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+</head>
+
+<body>
+    <script>
+        function add(a, b) {
+            return a + b;
+        }
+
+        function subtract(a, b) {
+            return a - b;
+        }
+
+        function multiply(a, b) {
+            return a * b;
+        }
+
+        function divide(a, b) {
+            return a / b;
+        }
+
+        function modulus(a, b) {
+            return a % b;
+        }
+
+        function exponent(a, b) {
+            return a ** b;
+        }
+
+
+
+        function operation(num1, num2) {
+            let operator = prompt("Please select a valid operator [+, -, /, *, **, %]: ");
+
+            if (operator === "+") {
+                return window.alert("Result: " + add(num1, num2));
+            } else if (operator === "-") {
+                return window.alert("Result: " + subtract(num1, num2));
+            } else if (operator === "*") {
+                return window.alert("Result: " + multiply(num1, num2));
+            } else if (operator === "/") {
+                return window.alert("Result: " + divide(num1, num2));
+            } else if (operator === "%") {
+                return window.alert("Result: " + modulus(num1, num2));
+            } else if (operator === "**") {
+                return window.alert("Result: " + exponent(num1, num2));
+            } else {
+                operation(num1, num2);
+            }
+        }
+
+        function main() {
+            let num1 = parseInt(prompt("Enter a valid number: "));
+            let num2 = parseInt(prompt("Enter a valid number: "));
+
+            if (Number.isInteger(num1) === false || Number.isInteger(num2) === false) {
+                window.alert("Enter valid numbers!");
+                main();
+            }else {
+                return operation(num1, num2);
+            }
+        }
+        main();
+    </script>
+</body>
+
+</html>
