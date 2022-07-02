@@ -1,2 +1,2 @@
 # Beginner-Projects
-A starter kit for HTML, CSS and Javascript
+A starter kit for HTML, CSS and Javascript fundamentals.
