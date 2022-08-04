@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+*{
+    font-family: 'Sora', sans-serif; 
+    margin: 0;
+    color: #183153;
+}
+table, tr{
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    
+}
+.item{
+    grid-template-columns: 70%;
+    background-color:#F0F1F3 ;
+    width: 70%;
+    justify-content: center;
+    overflow-x: auto;
+    display: grid;
+    margin: auto;
+}
+.info{
+    grid-template-columns: 80%;
+    width: 100%;
+    line-height: 3rem;
+    padding: 100px 0;
+}
+li{
+    list-style-type: none;
+}
+
