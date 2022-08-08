@@ -1,16 +1,77 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documentation</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="./static/assets/index/favicon-32x32.png" /> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="{% static 'home_base.css' %}" />
+  <link rel="stylesheet" href="style.css"/>
+
+  {% block style %}
+  {% endblock %}
+
+  {% block head_script %}
+  {% endblock %}
+  <title>{% block title %}IconCity{% endblock %}</title>
 </head>
 
 <body>
-     
+  <header class="">
+    <div class="logo">
+      <img src="{% static 'assets/home/index/logo_hd.png' %}">
+    </div>
+    <i class="fa-solid fa-bars mobile fa-2x icon" onclick="show()"></i>
+    <div class="desktop desktop-link-div">
+      <div class="desktop-links">
+        <div>
+          <a href="#">Home</a>
+        </div>
+        <div>
+          <a href="#">Generator</a>
+        </div>
+        <div>
+          <a href="#">Docs</a>
+        </div>
+        <div>
+          <a href="#">Contact Us</a>
+        </div>
+      </div>
+      <div class="desktop-btns">
+        <a href="./accounts/login.html"><button>Login</button></a>
+        <a href="./accounts/register.html"><button class="desktop-reg">Register</button></a>
+      </div>
+    </div>
+  </header>
+  <main class="">
+    <div class="mobile mobile-link-div">
+      <div class="links left">
+        <a href="#" class="spaced">
+          <h5>Home</h5>
+        </a>
+        <a href="#">
+          <h5>Generator</h5>
+        </a>
+        <a href="#">
+          <h5>Docs</h5>
+        </a>
+        <a href="#">
+          <h5>Contact Us</h5>
+        </a>
+        <div class="mobile-btn">
+          <a href="./accounts/login.html"><button>Login</button></a>
+          <a href="./accounts/register.html"><button class="mobile-reg">Register</button></a>
+        </div>
+      </div>
+      <div class="outside-click" onclick="noShow()"></div>
+    </div>
+
+    {% block main %}
     <div class="cotainer">
         <main class="item">
             <div class="info">
@@ -164,12 +225,13 @@
                             <img src="" alt="Collection Page">
                         </ul>
                         <ul>Code in text file. here is what it looks like:
-                        <xmp>
-                            <link rel="None" type="image/ico" href="/favicon.ico" />
-                            <link rel="icon" type="image/png" href="/favicon-16x16.png" />
-                            <link rel="icon"s type="image/png" href="/favicon-32x32.png" />
-                            <link rel="icon" type="image/png" href="/favicon-64x64.png" />
-                            <link rel="icon" type="image/png" href="/favicon-96x96.png" />
+                        <div class = "code-embed">
+                            <span><xmp><link rel="None" type="image/ico" href="/favicon.ico" /></xmp></span>
+                            <xmp><link rel="icon" type="image/png" href="/favicon-16x16.png" /></xmp>
+                            <xmp><link rel="icon"s type="image/png" href="/favicon-32x32.png" /></xmp>
+                            <!--<div class = "code-embed"--><xmp><link rel="icon" type="image/png" href="/favicon-64x64.png" /></xmp>
+                            <xmp><link rel="icon" type="image/png" href="/favicon-96x96.png" /></xmp>
+                        </div>
                             <link rel="icon" type="image/png" href="/favicon-180x180.png" />
                             <link rel="apple-touch-icon" type="image/png" href="/apple-touch-icon-57x57.png" />
                             <link rel="apple-touch-icon" type="image/png" href="/apple-touch-icon-60x60.png" />
@@ -186,7 +248,7 @@
                             <link rel="None" type="image/png" href="/mstile-310x310.png" />
                             <link rel="None" type="image/png" href="/mstile-310x150.png" />
                             <link rel="shortcut icon" type="image/png" href="/favicon-196x196.png" />
-                        </xmp>
+                        
                         
                             <p>To use this code; copy the required code snipet to your HTML file</p>
                         </ul>
@@ -230,6 +292,54 @@
                 </section>
             </div>
         </main>
+        {% endblock %}
+
+        <!--Footer Beginning-->
+
+
+  <footer class="footer">
+    <div class="l-footer">
+      <div class=" logo">
+        <img src="{% static '/assets/home/index/logo_white_ft.png' %}" id="w-logo" alt="Iconcity Logo" class="">
+      </div>
+      <p>Iconcity helps you generate your favourite favicon in the twinkle of an eye.</p>
+    </div>
+    <ul class="r-footer">
+      <li class="features similar">
+        <h2>Developers</h2>
+        <ul class="box h-box">
+          <li><a href="#">Doumentation</a></li>
+          <li><a href="#">Tutorial</a></li>
+          <li><a href="#">API Status</a></li>
+        </ul>
+      </li>
+      <li class=" similar resource">
+        <h2>Resources</h2>
+        <ul class="box">
+          <li><a href="#">Introduction</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+      </li>
+
+      <li class="similar">
+        <h2>Company</h2>
+        <ul class="box">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Socials</a></li>
+        </ul>
+      </li>
+
+    </ul>
+    <hr>
+    <div class="b-footer">
+      <p>2022 Iconcity. All rights reserved</p>
+    </div>
+  </footer>
+
+
+  <!--Footer End-->
     </div>
 </body>
 
