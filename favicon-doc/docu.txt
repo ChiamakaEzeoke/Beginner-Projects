@@ -1,0 +1,207 @@
+How to add a favicon to your website - ICO format
+Step 1: Name Your Favicon
+Make sure that your favicon is named favicon.ico. The naming of the file is important because web browsers automatically look for a file with that specific name. If you need to use a custom name then head to this advanced tutorial.
+
+Step 2: Upload Your Favicon
+Upload your favicon to your website's main or root directory. The file should be accessible at yourwebsite.com/favicon.ico. The location of the file is important because web browsers will automatically look for a file named favicon.ico in that specific location. If you need to use a custom location then head to this advanced tutorial.
+
+Step 3: Testing
+Once you've uploaded the favicon you should be able to verify that installation worked by viewing the favicon in the tab of the browser. Bookmark your webpage to validate that the favicon shows up in the bookmarks bar as well.
+
+Step 4: Debugging
+Why isn't my favicon being displayed?
+The most likely scenario is that your favicon is misnamed or was installed in the wrong directory. Make sure that your favicon is accessible at yourwebsite.com/favicon.ico
+
+Why isn't it displaying the latest version?
+Web browsers cache the favicon and sometimes display older versions. You may need to clear your cache if seems like your favicon is not updating. This will force the browser to display the latest version of your favicon.
+
+
+
+Step 4: Input your text size
+Step 5: Select background color
+Step 6: Select background shape
+ 
+
+
+
+
+
+  <footer class="footer">
+    <div class="l-footer">
+      <img src="./static/assets/index/logo_white_ft.png" id = "w-logo" alt="Iconcity Logo">
+      <p>Iconcity helps you generate your favorite favicon in the twinkle of an eye</p>
+    </div>
+    <ul class="r-footer">
+
+      <li class="features">
+        <h2>Developers</h2>
+        <ul class="box h-box">
+          <li><a href="#">Doumentation</a></li>
+          <li><a href="#">Tutorial</a></li>
+          <li><a href="#">API Status</a></li>
+        </ul>
+      </li>
+      <li>
+        <h2>Resources</h2>
+        <ul class="box">
+          <li><a href="#">Introduction</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Testimoial</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <h2>Company</h2>
+        <ul class="box">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Career</a></li>
+          <li><a href="#">Social</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Legal</a></li>
+        </ul>
+      </li>
+
+    </ul>
+    <div class="copyright"></div>
+    <div class="b-footer">
+      <p>2022 Iconcity. All rights reserved</p>
+      <ul class="box terms">
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Security</a></li>
+      </ul>
+    </div>
+  </footer>
+
+
+  <!--Footer End-->
+
+
+
+
+/*footer beginning*/
+
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  }
+  .footer {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 50px;
+  color: #fff;
+  background-color:  #183153;
+  min-height: calc(100vh - 40px);
+  }
+  
+  .footer > * {
+  flex:  1 100%;
+  }
+  
+  .l-footer {
+  margin-right: 1.25em;
+  margin-bottom: 2em;
+  display: inline-block;
+  }
+  
+  
+  h2 {
+  font-weight: 400;
+  font-size: 15px;
+  }
+  
+  .footer ul {
+  list-style: none;
+  padding-left: 0;
+  }
+  
+  .footer li {
+  line-height: 3em;
+  }
+
+  
+  .footer a {
+  text-decoration: none;
+  }
+  
+  .r-footer {
+  display: flex;
+  flex-flow: row wrap;
+  }
+  
+  .r-footer > * {
+  flex: 1 50%;
+  margin-right: 1.25em;
+ 
+  }
+  
+  .box a {
+  color: #ffffff;
+  font-weight: 100;
+  }
+  
+  .h-box {
+  column-gap: 1.25em;
+  }
+  
+  .b-footer {
+  text-align: center;
+  color:#ffffff;
+  padding-top: 50px;
+  }
+  
+  .l-footer p {
+  padding-right: 20%;
+  color: #ffffff;
+  }
+  .b-footer ul{
+    display: grid
+  } 
+
+  
+  @media screen and (min-width: 600px) {
+
+  .r-footer > * {
+  flex: 1;
+  }
+  .footer{
+    min-height: calc(100vh - 40px);
+  }
+  .copyright{
+    text-decoration: overline;
+    width: 1200px;
+    height: 0px;
+    border: 0.8px solid #FFFFFF;
+
+  }
+  .b-footer p{
+    float: left;
+    padding-top: 10px;
+  }
+  .b-footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .features {
+  flex-grow: 1;
+  }
+  
+  .l-footer {
+  flex: 1 0px;
+  }
+  
+  .r-footer {
+  flex: 2 0px;
+  }
+  a :hover{
+    text-decoration: underline;
+  }
+}
+@media only screen and (min-width: 580px) and (max-width: 1300px) {
+
+}
+
+  /* footer end */
